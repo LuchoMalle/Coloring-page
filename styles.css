@@ -1,0 +1,114 @@
+/* configuración general */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #3B3355;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+}
+
+/* estructuración del contenido */
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+
+header {
+    min-height: 10vh;
+}
+
+main {
+    min-height: 70vh;
+    margin: auto 0;
+}
+
+footer {
+    min-height: 10vh;
+}
+
+/* Diseño del encabezado */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .titulo {
+    padding: 2em 0;
+    display: flex;
+    color: #fff;
+    font-family: 'Tilt Neon', cursive;
+    flex-direction: row;
+    align-items: center;
+}
+
+header .titulo i {
+    padding-left: 10px;
+    font-size: 6vh;
+}
+
+header .titulo h1 {
+    text-decoration: underline wavy white;
+    text-underline-position: under;
+    font-size: 5vh;
+}
+
+/* Diseño del contenido principal */
+
+.principal{
+    display: flex;
+    justify-content: center;
+}
+
+#div-canvas{
+    width: 90vw;
+    height: 70vh;
+    max-height: auto;
+    border-radius: 10px;
+}
+
+#canvas {
+    border: 1px solid #d9d9d9;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+#contenedorPaleta {
+    width: 90vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    margin-top: 1px;
+    border-radius: 50px;
+    background-color: #F7F7FF;
+}
+
+#contenedorPaleta .fa-pencil{
+    font-size: 6vh;
+}
+
+#contenedorPaleta .fa-pencil:hover{
+    transform: scale(1.15);
+}
+
+/* Diseño del pié de página */
+
+footer h2{
+    text-align: center;
+    color: white;
+}

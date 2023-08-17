@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/c0c9fdad8f.js" crossorigin="anonymous"></script>
+</head>
+
+<body onresize="init()">
+    <header>
+        <div class="titulo">
+            <h1>Canvas para dibujar</h1>
+            <i class="fa-solid fa-pencil"></i>
+        </div>
+    </header>
+    <main class="principal">
+        <div id="div-canvas">
+            <div id="contenedorPaleta"></div>
+            <canvas id="canvas"></canvas>
+        </div>
+        <!-- <a id="dibujo" href download="miDibujo.jpeg">Descargar dibujo</a> -->
+    </main>
+    <footer class="pie-de-pagina">
+        <h2>Realizado por Luciano Malleret 2023</h2>
+    </footer>
+    <script src="paletaColores.js">
+        // const divCanvas = document.getElementById('div-canvas');
+        // const canvas = document.querySelector('canvas');
+        // const c = canvas.getContext('2d');
+        // canvas.width = divCanvas.offsetWidth;
+        // canvas.height = divCanvas.offsetHeight;
+        // let isDrawing = false;
+
+        // c.fillStyle = 'black';
+
+        // let init = function () {
+        //     canvas.width = divCanvas.clientWidth;
+        //     canvas.height = divCanvas.clientHeight;
+        // }
+
+        // function draw(x, y, colorActual) {
+        //     if (isDrawing) {
+        //         c.fillStyle = colorActual;
+        //         c.beginPath();
+        //         c.arc(x, y, 10, 0, Math.PI * 2);
+        //         c.closePath();
+        //         c.fill();
+        //     }
+        // }
+
+        // canvas.addEventListener('mousemove', (event) =>
+        //     draw(event.offsetX, event.offsetY)
+        // );
+        // canvas.addEventListener('mousedown', () => isDrawing = true);
+        // canvas.addEventListener('mouseup', () => isDrawing = false);
+
+        // // document.getElementById('dibujo').addEventListener('click', (event) =>
+        // //     event.target.href = canvas.toDataURL()
+        // // );
+    </script>
+</body>
+
+</html>
